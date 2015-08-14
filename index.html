@@ -27,10 +27,37 @@
 				<li class="large-type"><a href="http://facebook.com/axordg" target="_blank">Facebook</a></li>
 				<li class="large-type"><a href="https://www.linkedin.com/in/axordg" target="_blank">LinkedIn</a></li>
 				<li class="large-type"><a href="https://instagram.com/axordg_" target="_blank">Instagram</a></li>
+				<li class="large-type"><a href="https://instagram.com/axordg_" target="_blank">Blog</a></li>
 			</ul>
 
 			<footer>
-				<p>Also, <a href="http://grandecabeza.com" target="_blank">I have a blog</a> about geeky stuff...</p>
+				<div id="quote"></div>
+				  <script>
+				    (function() {
+				      var quotes = [
+				        {
+				          text: "'Design is not just what it looks like and feels like. Design is how it works.'",
+				          author:  "—Steve Jobs"
+				        },
+				        {
+				          text: "'No matter what people tell you, words and ideas can change the world.'",
+				          author:  "—Robin Williams",
+				        },
+				        {
+				          text: "'We all need people who will give us feedback. That's how we improve.'",
+				          author:  "—Bill Gates",
+				        },
+				        {
+				          text: "'Follow your passion, be prepared to work hard and sacrifice, and, above all, don't let anyone limit your dreams.'",
+				          author:  "—Donovan Bailey",
+				        }
+				      ];
+				      var quote = quotes[Math.floor(Math.random() * quotes.length)];
+				      document.getElementById("quote").innerHTML =
+				        '<p>' + quote.text + '</p>' +
+				        '<p>' + quote.author + '</p>';
+				    })();
+				  </script>
 			</footer>
 		</div>
 	</body>
